@@ -4,7 +4,7 @@
  * Para trocar o link do WhatsMenu, altere apenas WHATSMENU_URL abaixo:
  * todos os botões de pedido da página usam esse valor.
  */
-export const WHATSMENU_URL = "https://www.whatsmenu.com.br/";
+export const WHATSMENU_URL = "https://www.whatsmenu.com.br/hamburgueriabiglanches";
 
 export const BUSINESS = {
   name: "Big Lanches",
