@@ -78,16 +78,31 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Big Lanches | Lanchonete em Barueri - Peça online" },
+      {
+        name: "description",
+        content:
+          "Lanches, hot dogs, pizzas, porções e sucos feitos na hora no Parque Viana, Barueri. Peça pelo cardápio online e receba em casa.",
+      },
+      { name: "author", content: "Big Lanches" },
+      { name: "theme-color", content: "#0b0b0b" },
+      { property: "og:title", content: "Big Lanches | Lanchonete em Barueri" },
+      {
+        property: "og:description",
+        content: "Lanches, hot dogs, pizzas, porções e sucos feitos na hora. Peça online!",
+      },
       { property: "og:type", content: "website" },
+      { property: "og:locale", content: "pt_BR" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Poppins:wght@400;500;600;700;800&display=swap",
+      },
+      { rel: "preconnect", href: "https://images.unsplash.com" },
       {
         rel: "stylesheet",
         href: appCss,
@@ -103,7 +118,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="pt-BR" className="scroll-smooth">
       <head>
         <HeadContent />
       </head>
